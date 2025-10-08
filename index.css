@@ -31,10 +31,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* SPACING */
---spacing-300: 24px;
---spacing-150: 12px;
---spacing-100: 8px;
---spacing-50: 4px;
+--spacing-300: 1.5rem;
+--spacing-150: 0.75rem;
+--spacing-100: 0.5rem;
+--spacing-50: 0.25rem;
 
 }
 
@@ -52,8 +52,8 @@ h1, h2, h3, h4, h5, h6, p {
 /* CSS FOR TYPOGRAPHY */
 
 .text-preset-1 {
-  font-size: 24px;
-  line-height: 120%;
+  font-size: 1.5rem;
+  line-height: 1.2;
   font-family: Figtree-Extra-Bold;
   letter-spacing: 0px;
   color: var(--Gray-950);
@@ -61,24 +61,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .text-preset-2 {
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 1rem;
+  line-height: 1.5;
   font-family: Figtree-Medium;
   letter-spacing: 0px;
   color: var(--Gray-500);
 }
 
 .text-preset-3 {
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 0.875rem;
+  line-height: 1.5;
   font-family: Figtree-Medium;
   letter-spacing: 0px;
   color: var(--Gray-950);
 }
 
 .text-preset-3-bold {
-  font-size: 14px;
-  line-height: 150%;
+  font-size: 0.875rem;
+  line-height: 1.5;
   font-family: Figtree-Extra-Bold;
   letter-spacing: 0px;
   color: var(--Gray-950);
@@ -96,8 +96,8 @@ body {
 .blog-preview-card_wrapper {
   display: flex;
   justify-content: center;
-  height: 501px;
-  width: 327px;
+  min-height: 501px;
+  max-width: 327px;
   background-color: var(--White);
   border-radius: 20px;
   padding: var(--spacing-300);
@@ -109,6 +109,7 @@ body {
   width: 100%;
   border-radius: 20px;
   height: auto;
+  object-fit: cover;
 }
 
 .blog-preview-card_body-wrapper {
@@ -153,7 +154,7 @@ padding-top: var(--spacing-150);
 /* DESKTOP VERSION */
 @media (min-width: 768px) {
   .blog-preview-card_wrapper {
-  height: 522px;
-  width: 384px;
+    min-height: 522px;
+    max-width: 384px;
   }
 }
