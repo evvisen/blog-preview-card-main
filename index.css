@@ -1,10 +1,23 @@
+
+/* RESET HTML */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/*  BODY SIZE*/
 body {
-  min-width: 100vh;
+  min-width: 100vw;
+}
+
+/* RESET TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 /* VARIBLES */
@@ -25,6 +38,7 @@ body {
 
 }
 
+/* IMPORTING FONT */
 @font-face {
   font-family: Figtree-Extra-Bold;
   src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
@@ -42,6 +56,8 @@ body {
   line-height: 120%;
   font-family: Figtree-Extra-Bold;
   letter-spacing: 0px;
+  color: var(--Gray-950);
+  padding: var(--spacing-150) 0;
 }
 
 .text-preset-2 {
@@ -49,6 +65,7 @@ body {
   line-height: 150%;
   font-family: Figtree-Medium;
   letter-spacing: 0px;
+  color: var(--Gray-500);
 }
 
 .text-preset-3 {
@@ -56,6 +73,7 @@ body {
   line-height: 150%;
   font-family: Figtree-Medium;
   letter-spacing: 0px;
+  color: var(--Gray-950);
 }
 
 .text-preset-3-bold {
@@ -63,9 +81,10 @@ body {
   line-height: 150%;
   font-family: Figtree-Extra-Bold;
   letter-spacing: 0px;
+  color: var(--Gray-950);
 }
 
-/* Styling Mobile */
+/* STYLING MAIN */
 body {
   display: flex;
   justify-content: center;
@@ -76,12 +95,65 @@ body {
 
 .blog-preview-card_wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   height: 501px;
   width: 327px;
   background-color: var(--White);
   border-radius: 20px;
   padding: var(--spacing-300);
+  box-shadow: 8px 8px;
+  border: 1px solid var(--Gray-950);
+}
 
+.blog-preview-card_header-image {
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+
+.blog-preview-card_body-wrapper {
+  padding: var(--spacing-300) 0;
+  height: auto;
+}
+
+.blog-preview-card_body-button {
+  display: flex;
+  background-color: var(--Yellow);
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 4px;
+  height: 2em;
+}
+
+.blog-preview-card_body-date {
+padding-top: var(--spacing-150);
+}
+
+.blog-preview-card_footer-wrapper {
+  display: flex;
+  gap: var(--spacing-150);
+  align-items: center;
+}
+
+.blog-preview-card_footer-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.blog-preview-card_wrapper:hover .blog-preview-card_body-heading {
+    color: var(--Yellow);
+    transition: all 0.6s ease;
+}
+.blog-preview-card_wrapper:hover {
+  box-shadow: 16px 16px;
+  transition: all 0.6s ease;
+}
+
+/* DESKTOP VERSION */
+@media (min-width: 768px) {
+  .blog-preview-card_wrapper {
+  height: 522px;
+  width: 384px;
+  }
 }
