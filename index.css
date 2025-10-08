@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 100vh;
+}
+
+/* VARIBLES */
+
+/* COLORS */
+:root {
+--Yellow:#F4D04E;
+--Gray-950: #111111;
+--Gray-500: #6B6B6B;
+--White: #FFFFFF;
+
+
+/* SPACING */
+--spacing-300: 24px;
+--spacing-150: 12px;
+--spacing-100: 8px;
+--spacing-50: 4px;
+
+}
+
+@font-face {
+  font-family: Figtree-Extra-Bold;
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Figtree-Medium;
+  src: url(assets/fonts/static/Figtree-Medium.ttf);
+}
+
+/* CSS FOR TYPOGRAPHY */
+
+.text-preset-1 {
+  font-size: 24px;
+  line-height: 120%;
+  font-family: Figtree-Extra-Bold;
+  letter-spacing: 0px;
+}
+
+.text-preset-2 {
+  font-size: 16px;
+  line-height: 150%;
+  font-family: Figtree-Medium;
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Figtree-Medium;
+  letter-spacing: 0px;
+}
+
+.text-preset-3-bold {
+  font-size: 14px;
+  line-height: 150%;
+  font-family: Figtree-Extra-Bold;
+  letter-spacing: 0px;
+}
+
+/* Styling Mobile */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Yellow)
+}
+
+.blog-preview-card_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 501px;
+  width: 327px;
+  background-color: var(--White);
+  border-radius: 20px;
+  padding: var(--spacing-300);
+
+}
